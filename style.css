@@ -1,0 +1,374 @@
+/* Universal styling */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* header styling */
+header{
+    background: linear-gradient(45deg, #4086f4, #31a952, #fbbe01, #ff311f, #ff00cc, #4086f4, #31a952, #fbbe01, #ff311f, #ff00bb);
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+}
+.box{
+    text-align: center;
+    color: black;
+    /* background: linear-gradient(to right, orange , yellow, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-size: 50px;
+    border: 2px solid black;
+}
+
+/* Font page styling */
+.img{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("mountain-clock-185611942-16x9_0.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* left styling */
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main_time{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
+    opacity: .7;
+    border-radius: 20px;
+    line-height: 40px;
+    border: 5px solid black;
+}
+
+.intro{
+    font-size: 20px;
+    width: 50dvw;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.intro h1,p{
+    text-align: center;
+}
+
+/* mid styling */
+.Mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.icon img{
+    width: 60px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 26px;
+    /* border: 2px solid red; */
+    filter: invert(1);
+}
+
+.icon img:hover,.icon .active{
+    filter: invert(0);
+    background-color: blueviolet;
+}
+
+/* Main conent styling */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+    /* background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); */
+}
+
+/* Clock styling */
+.Time_box{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    /* padding: 20px; */
+    border: 5px solid black;
+    border-radius:20px;
+    font-size: 30px;
+    font-weight: bolder;
+    /* background-color:  rgb(19, 214, 52); */
+    color:black;
+    background-image: url("45250.png");
+    background-size: cover;
+}
+
+.Time_content{
+    display: flex;
+    border: 10px solid black;
+    border-radius:20px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    /* background-color:  rgb(19, 214, 52);; */
+}
+
+.Time_content_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 10px solid black;
+    border-radius:20px;
+    width: 30px;
+    height: 2em;
+    /* background-color:  rgb(19, 214, 52);; */
+    color: white;
+    font-size: 40px;
+}
+
+.format{
+    font-size: 30px;
+    padding: 12px;
+    height: 2.355em;
+}
+
+.Time_date{
+    margin-top: 70px;
+}
+
+/* Stopwatch styling */
+#stop_watch{
+    padding: 10px;
+}
+
+.button_box{
+    display: flex;
+}
+
+button{
+    width: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px 0px;
+    background: transparent;
+    border: 5px solid black;
+}
+
+#stop_watch_start{
+    border-radius:20px 0px 0px 20px;
+}
+
+#stop_watch_stop{
+    border-radius:0px 20px 20px 0px;
+}
+
+button:hover{
+    background: linear-gradient(45deg,rgb(83, 83, 247),rgb(215 42 216));
+    /* background-color: black;
+    color: rgb(83, 83, 247);
+    border-color: rgb(83, 83, 247); */
+    /* color:white; */
+    /* border-color: white; */
+    font-weight: bolder;
+}
+
+/* Alarm styling */
+#Set_alarm{
+    position: relative;
+    top: 70px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+input{
+    width: 50px;
+    height: 30px;
+}
+
+select{
+    font-size: 20px;
+    width: 60px;
+    height: 90px;
+    border-radius: 20px;
+    border: 5px solid black;
+    background: transparent;
+}
+
+select:hover{
+    background: linear-gradient(45deg,rgb(83, 83, 247),rgb(215 42 216));
+    /* background-color: rgb(83, 83, 247); */
+    color:white;
+    border-color: white;
+    font-weight: bolder;
+}
+
+select option{
+    color: black;
+}
+
+#Alarm_record{
+    height: 100%;
+}
+
+.Alarm_delete{
+    width: 200px;
+    border-radius: 20px;
+}
+
+.Rest_time{
+    color:black;
+    background-size: cover;
+    border: 5px solid black;
+    border-radius:20px;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 10px;
+    opacity: .8;
+    position: relative;
+    bottom:400px;
+    transition: all 2s linear 1s;
+    display: none;
+    background: linear-gradient(45deg,rgb(83, 83, 247),rgb(215 42 216));
+}
+
+#Set_alarm{
+    margin-bottom: 50px;
+}
+
+#Alarm,#Timer{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Timer styling */
+#Timer h1{
+    font-size: 35px;
+}
+
+.Timer_btn{
+    width: 250px;
+    border-radius: 20px;
+    margin-top: 80px;
+}
+
+#timer{
+    height: 100%;
+}
+
+#timer button{
+    width: 100%;
+}
+
+#Timer_pause{
+    border-radius:20px 0px 0px 20px;
+}
+
+#Timer_stop{
+    border-radius:0px 20px 20px 0px;
+}
+
+
+/* Footer styling */
+footer{
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+}
+
+#Timer,#Alarm,#Stopwatch{
+    display: none;
+}
+
+/* Add responsiveness and mediaquery*/
+@media only screen and (min-width:1150px) {
+    .img{
+       height: 700px;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+    .img{
+       flex-direction: column;
+    }
+    .icon{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main_time{
+        margin-top: 125px;
+    }
+    .box{
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .Time_content_box{
+        margin: 5px;
+        width: 15px;
+        font-size: 25px;
+    }
+    .format{
+        font-size: 20px;
+    }
+    select{
+    background: linear-gradient(45deg,rgb(83, 83, 247),rgb(215 42 216));
+    }
+    .intro p{
+        display: none;
+    }
+    .box{
+        font-size: 40px;
+    }
+}
+
+
+@media only screen and (max-width:330px){
+    .Time_content_box{
+        margin: 2px;
+        width: 12px;
+        font-size: 20px;
+    }
+    .format{
+        font-size: 15px;
+    }
+    .box{
+        font-size: 30px;
+    }
+    .Time_box{
+        width: 250px;
+        height: 300px;
+    }
+    .Timer_btn{
+        width: 200px;
+        margin-top: 30px;
+    }
+    #Set_alarm {
+        margin-bottom:90px
+    }
+    .Time_box h1{
+        text-align: center;
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="clock.png" type="image/x-icon">
+    <title>ApnaTime.com</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="box">ApanaTime</h1>
+    </header>
+
+    <div class="img">
+      <div class="left">
+        <div class="main_time">
+          <div class="img_time"></div>
+          <div class="img_date"></div>
+          <div class="img_day"></div>
+        </div>
+        <div class="intro">
+          <h1>Welcome To ApanaTime</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus velit sed ab, ullam alias quibusdam dolores cum,
+            consectetur hic labore impedit earum. Officia facere, laborum
+            temporibus sapiente quisquam amet accusamus?
+          </p>
+        </div>
+      </div>
+      <div class="Mid icon">
+        <img class="active" src="clock.png" alt="error 404..." name="Clock" />
+        <img src="timer.png" alt="error 404..." name="Timer" />
+        <img src="time-tracking.png" alt="error 404..." name="Stopwatch" />
+        <img
+          src="circular-alarm-clock-tool.png"
+          alt="error 404..."
+          name="Alarm"
+        />
+      </div>
+      <main class="right">
+        <!-- This is a Clock section -->
+        <div class="Time_box" id="Clock">
+          <div class="Time_content">
+            <div class="Time_content_box hour"></div>
+            <div class="Time_content_box min"></div>
+            <div class="Time_content_box sec"></div>
+            <div class="Time_content_box format"></div>
+          </div>
+          <div class="Time_date"></div>
+          <div class="Time_day"></div>
+          <h1>Clock</h1>
+        </div>
+
+        <!-- This is a Stopwatch section -->
+        <div class="Time_box" id="Stopwatch">
+          <h1>Stopwatch</h1>
+          <div class="Time_content">
+            <p id="stop_watch">00:00:00</p>
+          </div>
+
+          <div class="button_box">
+            <button id="stop_watch_start">start</button>
+            <button id="stop_watch_stop">reset</button>
+          </div>
+        </div>
+
+        <!-- This is a Alarm section -->
+        <div id="Alarm">
+          <div class="Time_box">
+            <h1>Alarm</h1>
+            <div class="Time_content">
+              <div class="Time_content_box">
+                <label for="Alarm_hours">H</label>
+                <select name="Alarm_hours" id="Alarm_hours"></select>
+                <!-- <input type="number" id="Alarm_hours" min="1" max="12" /> -->
+              </div>
+
+              <div class="Time_content_box">
+                <label for="Alarm_min">M</label>
+                <select name="Alarm_min" id="Alarm_min"></select>
+                <!-- <input type="number" id="Alarm_min" min="0" max="59" /> -->
+              </div>
+
+              <div class="Time_content_box">
+                <label for="Alarm_sec">S</label>
+                <select name="Alarm_sec" id="Alarm_sec"></select>
+                <!-- <input type="number" id="Alarm_sec" min="0" max="59" /> -->
+              </div>
+
+              <div class="Time_content_box">
+                <label for="Alarm_format">F</label>
+                <select name="Alarm_format" id="Alarm_format">
+                  <option value="AM">AM</option>
+                  <option value="PM" selected>PM</option>
+                </select>
+              </div>
+            </div>
+
+            <button id="Set_alarm">Set Alarm</button>
+          </div>
+          <div class="Time_box" id="Alarm_record">
+            
+          </div>
+          <p class="Rest_time"></p> 
+        </div>
+
+        <!-- This is a Timer section -->
+        <div id="Timer">
+          <div class="Time_box">
+            <h1>Countdown Timer</h1>
+            <div class="Time_content">
+              <div class="Time_content_box">
+                <label for="hours">H</label>
+                <select name="hours" id="hours"></select>
+                <!-- <input type="number" id="hours" min="0" /> -->
+              </div>
+              <div class="Time_content_box">
+                <label for="minutes">M</label>
+                <select name="minutes" id="minutes"></select>
+                <!-- <input type="number" id="minutes" min="0" max="59" /> -->
+              </div>
+              <div class="Time_content_box">
+                <label for="seconds">S</label>
+                <select name="seconds" id="seconds"></select>
+                <!-- <input type="number" id="seconds" min="0" max="59" /> -->
+              </div>
+            </div>
+            <button class="Timer_btn" onclick="startTimer()">Start Timer</button>
+          </div>
+          <div class="Time_box" id="timer"></div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p class="box">THis is copyright by &copysahil</p>
+    </footer>
+    <script src="clock.js"></script>
+  </body>
+</html>
