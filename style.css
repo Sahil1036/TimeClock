@@ -341,6 +341,10 @@ footer{
     .box{
         font-size: 40px;
     }
+     .Time_box h1{
+        text-align: center;
+        font-size: 40px;
+    }
 }
 
 
@@ -366,9 +370,5 @@ footer{
     }
     #Set_alarm {
         margin-bottom:90px
-    }
-    .Time_box h1{
-        text-align: center;
-        font-size: 40px;
     }
 }
