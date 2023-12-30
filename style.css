@@ -2,11 +2,13 @@
 *{
     padding: 0;
     margin: 0;
+    font-family:'Lugrasimo', 'cursive';
 }
+
 
 /* header styling */
 header{
-    background: linear-gradient(45deg, #4086f4, #31a952, #fbbe01, #ff311f, #ff00cc, #4086f4, #31a952, #fbbe01, #ff311f, #ff00bb);
+    /* background: linear-gradient(45deg, #4086f4, #31a952, #fbbe01, #ff311f, #ff00cc, #4086f4, #31a952, #fbbe01, #ff311f, #ff00bb); */
     background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
 }
 .box{
@@ -17,6 +19,19 @@ header{
     -webkit-text-fill-color: transparent; */
     font-size: 50px;
     border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.box img{
+    width: .9em;
+    margin-right: 5px;
+}
+
+span{
+    font-size: .6em;
+    font-weight: bolder;
 }
 
 /* Font page styling */
@@ -30,6 +45,8 @@ header{
     justify-content: space-evenly;
     align-items: center;
     background-image: url("mountain-clock-185611942-16x9_0.webp");
+    background-image: url("https://cdn.pixabay.com/photo/2018/10/23/19/56/clock-3768820_1280.jpg");
+    /* background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); */
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -61,6 +78,9 @@ header{
 .intro{
     font-size: 20px;
     width: 50dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-bottom: 100px;
 }
@@ -294,6 +314,7 @@ select option{
 /* Footer styling */
 footer{
     background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+    font-size: 40px;
 }
 
 #Timer,#Alarm,#Stopwatch{
@@ -304,6 +325,10 @@ footer{
 @media only screen and (min-width:1150px) {
     .img{
        height: 700px;
+    }
+    .Time_box h1{
+        text-align: center;
+        font-size: 40px;
     }
 }
 
@@ -320,6 +345,10 @@ footer{
     }
     .box{
         font-size: 45px;
+    }
+    .Time_box h1{
+        text-align: center;
+        font-size: 40px;
     }
 }
 
@@ -339,10 +368,6 @@ footer{
         display: none;
     }
     .box{
-        font-size: 40px;
-    }
-     .Time_box h1{
-        text-align: center;
         font-size: 40px;
     }
 }

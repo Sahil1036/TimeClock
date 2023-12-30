@@ -271,6 +271,8 @@ function startTimer() {
       if (totalTime <= 0) {
         clearInterval(timer);
         timerDisplay.textContent = "Time's up!";
+        const sound = new Audio("brahma-rooster-89888.mp3");
+        sound.play();
         setTimeout(() => {
           timerDisplay.textContent = "";
         }, 5000);
