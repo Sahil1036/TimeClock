@@ -369,12 +369,6 @@ img.forEach((e) => {
   });
 });
 
-// img.forEach(e=>{
-//   e.addEventListener("mousedown",(e)=>{
-//     e.target.style.backgroundColor="blueviolet";
-//       e.target.style.filter="none";
-//   })
-// });
 
 function All_clear() {
   img.forEach((e) => {
